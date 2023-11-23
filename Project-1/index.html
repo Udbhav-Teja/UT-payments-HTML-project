@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UT payment portal</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Vina+Sans&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Playfair Display', serif;
+            font-family: 'Vina Sans', sans-serif;
+            margin: 0%;
+            padding: 0%;
+            background: url(bg.jpg);
+            background-repeat: no-repeat;
+
+            .left {
+                border-top: solid rgb(25, 683, 84) 6px;
+                border-bottom: solid rgb(25, 683, 84) 6px;
+                position: absolute;
+                left: 16px;
+                top: 16px;
+                display: inline-block;
+            }
+
+            .left img {
+                width: 90px;
+                filter: invert(180%);
+            }
+
+            .left div {
+                line-height: 10px;
+                font-size: 18px;
+                text-align: center;
+            }
+
+            .mid {
+                display: block;
+                width: 750px;
+                margin: 30px auto;
+                font-size: large;
+                text-decoration: rgb(3, 125, 255);
+            }
+
+            .right {
+                position: absolute;
+                right: 50px;
+                top: 26px;
+                display: inline-block;
+            }
+
+            .navbar {
+                display: inline-block;
+            }
+
+            .navbar li {
+                display: inline-block;
+                font-size: large;
+            }
+
+            .navbar li a {
+                color: black;
+                text-decoration: none;
+                padding: 25px 66px;
+            }
+
+            .navbar li a:hover,
+            .navbar li a.active {
+                color: rgb(191, 216, 255);
+                text-decoration: underline;
+            }
+
+            .btn {
+                margin: 0px 12px;
+                background-color: white;
+                color: rgb(92, 133, 168);
+                padding: 6px 10px;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+
+            .btn:hover {
+                background-color: rgb(191, 216, 255);
+            }
+
+            .btnS{
+                cursor: pointer;
+                position: relative;
+                width: 252px;
+                left: 140px;
+                margin: 5px;
+                padding: 4px;
+            }
+        }
+
+        .container {
+            border: solid rgb(97, 164, 252) 6px;
+            margin: 158px 123px;
+            padding: 50px 75px;
+            width: 550px;
+            border-radius: 100px;
+            font-size: 33px;
+
+        }
+        .formgroup input{
+            text-align: center;
+            display: block;
+            width: 400px;
+            padding: 25px;
+            border: solid rgb(255, 150, 150) 4px;
+            margin: 20px auto;
+            border-radius: 20px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <div class="logo">
+                <img src="logo.webp" alt="logo">
+                <p>UT payments</p>
+            </div>
+        </div>
+        <!-- mid box for searching around website -->
+        <div class="mid">
+            <div class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Send</a></li>
+                <li><a href="#">Receive</a></li>
+                <li><a href="#">History</a></li>
+            </div>
+            <!-- right box for search icon etc -->
+            <div class="right">
+                <button class="btn">Search</button>
+                <button class="btn">Log in</button>
+            </div>
+    </header>
+    <div class="container">
+        <h1>For faster and safe payments.</h1>
+        <h2>@ zero delay</h2>
+        <form action="noaction.php">
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your name" >
+            </div>
+            <!-- <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your name" >
+            </div> -->
+            <button class="btnS">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
